@@ -51,4 +51,25 @@ Initial Setup procedure:
 ```shell
 git checkout -b part-2
 
+echo from the root folder...
+cd ..
+
+echo generate a react client app
+npm create parcel react-client client
+
+echo add "client" to the list of workspaces in the root package.json...
+echo now it's time to remove .git and node_modules folder from client folder
+rm -r client/.git
+rm -r client/node_modules
+
+echo reinstall all packages (into the node_modules folder at the root level)
+npm install --workspace=client
+
+echo add tanstack-query
+npm install @tanstack/react-query --workspace=client
+
+echo check if everything is fine
+cd client
+npm start
+
 ```

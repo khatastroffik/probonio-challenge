@@ -17,6 +17,7 @@
     "homepage": "https://github.com/khatastroffik/probonio-challenge#readme",
     "private": true,
     "workspaces": [
-        "server"
+        "server",
+        "client"
     ]
   }
