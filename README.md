@@ -72,4 +72,12 @@ echo check if everything is fine
 cd client
 npm start
 
+echo implementation...
+
+echo add tailwindcss...
+npm install tailwindcss @tailwindcss/postcss @tailwindcss/forms @heroicons/react 
+echo {"plugins": {"@tailwindcss/postcss": {}}} > .postcssrc
+echo also add an index.css...
+
+echo DONE!
 ```
