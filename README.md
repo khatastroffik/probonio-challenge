@@ -31,4 +31,8 @@ cd server
 npm start
 
 echo time to commit...
+
+npx @nestjs/cli@latest generate res api
+
+echo end of initial setup
 ```
