@@ -42,7 +42,7 @@ Important: `npm start` need to be called in order to finalize the creation of th
 - The temporary code (fetch from external API + bulkcreate) may now be deleted.
 - The server can be tested using: `http://localhost:3000/` and `http://localhost:3000/api/v1/apis`
 
-## challenge part-2
+## challenge part-2 - IMPLEMENTATION COMPLETED
 
 the code is maintained in the "**part-2**" branch of the repo.
 
