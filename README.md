@@ -7,7 +7,7 @@ For this purpose, the root folder is configured using "**NPM workspaces**".
 
 the code is maintained in the "**part-1**" branch of the repo.
 
-Setup procedure:
+Initial Setup procedure:
 
 ```shell
 git checkout -b part-1
