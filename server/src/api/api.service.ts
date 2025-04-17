@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Injectable } from '@nestjs/common';
 import { CreateApiDto } from './create-api.dto';
 import { InjectModel } from '@nestjs/sequelize';
@@ -7,12 +9,14 @@ import { Api } from './api.entity';
 export class ApiService {
     constructor(@InjectModel(Api) private apiModel: typeof Api) {}
 
-    create(createApiDto: CreateApiDto) {
-        return 'This action adds a new API';
+    async create(createApiDto: CreateApiDto) {
+        await this.apiModel.create({ ...createApiDto });
+        return 'Api entry created';
     }
 
-    findAll() {
-        return `This action returns all APIs`;
+    async findAll(): Promise<Api[]> {
+        const apis = await this.apiModel.findAll();
+        return apis;
     }
 
     count() {
@@ -29,5 +33,4 @@ export class ApiService {
         });
         await this.apiModel.bulkCreate(apis);
     }
-
 }

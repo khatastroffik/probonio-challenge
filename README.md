@@ -1,4 +1,4 @@
-# probonio-challenge"
+# probonio-challenge
 
 This repository is hosting both a **server** and a **client** application.
 For this purpose, the root folder is configured using "**NPM workspaces**".
@@ -35,4 +35,20 @@ echo time to commit...
 npx @nestjs/cli@latest generate res api
 
 echo end of initial setup
+```
+
+Important: `npm start` need to be called in order to finalize the creation of the data rows in the DB!
+
+- The temporary code (fetch from external API + bulkcreate) may now be deleted.
+- The server can be tested using: `http://localhost:3000/` and `http://localhost:3000/api/v1/apis`
+
+## challenge part-2
+
+the code is maintained in the "**part-2**" branch of the repo.
+
+Initial Setup procedure:
+
+```shell
+git checkout -b part-2
+
 ```
