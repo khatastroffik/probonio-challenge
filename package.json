@@ -1,0 +1,19 @@
+{
+    "name": "probonio-challenge",
+    "version": "1.0.0",
+    "description": "Probonio Interview Challenge",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/khatastroffik/probonio-challenge.git"
+    },
+    "author": "Loïs Bégué",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/khatastroffik/probonio-challenge/issues"
+    },
+    "homepage": "https://github.com/khatastroffik/probonio-challenge#readme"
+  }
