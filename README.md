@@ -3,7 +3,7 @@
 This repository is hosting both a **server** and a **client** application.
 For this purpose, the root folder is configured using "**NPM workspaces**".
 
-## challenge part-1
+## challenge part-1 - IMPLEMENTATION COMPLETED
 
 the code is maintained in the "**part-1**" branch of the repo.
 
